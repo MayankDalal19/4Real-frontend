@@ -10,7 +10,7 @@ const defaultBaseURL =
 
 const api = axios.create({
   baseURL: defaultBaseURL,
-  timeout: 10000,
+  timeout: 30000, // Render free tier can take ~30s to wake up
   headers: { "Content-Type": "application/json" },
 });
 
